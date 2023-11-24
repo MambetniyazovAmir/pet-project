@@ -19,8 +19,6 @@ services:
         dockerfile: Dockerfile
       image: nginx # имя будущего образа
       container_name: nginx1 # имя контейнера после запуска
-      ports:
-        - "8080:80"
       volumes:
         - ./code:/data/mysite.local
       # мы можем создать для контейнеров внутреннюю сеть
@@ -35,8 +33,6 @@ services:
         dockerfile: Dockerfile
       image: nginx # имя будущего образа
       container_name: nginx2 # имя контейнера после запуска
-      ports:
-        - "8090:80"
       volumes:
         - ./code:/data/mysite.local
       # мы можем создать для контейнеров внутреннюю сеть
@@ -52,8 +48,6 @@ services:
         dockerfile: Dockerfile
       image: nginx # имя будущего образа
       container_name: nginx3 # имя контейнера после запуска
-      ports:
-        - "8070:80"
       volumes:
         - ./code:/data/mysite.local
       # мы можем создать для контейнеров внутреннюю сеть
